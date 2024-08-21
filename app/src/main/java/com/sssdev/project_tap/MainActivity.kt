@@ -1,7 +1,6 @@
 package com.sssdev.project_tap
 
-import LoginActivity
-import SignupActivity
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -21,6 +20,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.sssdev.project_tap.Screens.LoginActivity
 import com.sssdev.project_tap.ui.theme.Project_TapTheme
 
 class MainActivity : ComponentActivity() {
@@ -48,7 +48,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier
     )
-    /*ESTE BOTON SOLO FUE DE PRUEBA, PUEDES BORRARLO CUANDO QUIERAS*/
+    /*ESTE BOTON SOLO FUE DE PRUEBA, PUEDEN BORRARLO CUANDO QUIERAN*/
     Button(
         onClick = {
             val intent = Intent(context, LoginActivity::class.java)
@@ -60,7 +60,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         )
 
     ) {
-        Text("Registrarme", fontSize = 18.sp)
+        Text("LOGIN", fontSize = 18.sp)
     }
 }
 
