@@ -1,5 +1,6 @@
-package com.sssdev.project_tap.Screens
+package com.sssdev.project_tap.screens
 
+import com.sssdev.project_tap.R
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -17,20 +18,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
-import androidx.navigation.NavHostController
-import com.example.splashscreen.navigation.AppScreens
 import kotlinx.coroutines.delay
 
 @Composable
-fun SplashScreen(navController: NavHostController)
+fun SplashScreen()
 {
-    LaunchedEffect(key1 = true)
-    {
-        delay(5000)
-        navController.popBackStack()
-        navController.navigate(AppScreens.MainScreen.route)
-    }
 
     Splash()
 }
@@ -42,8 +34,8 @@ fun Splash()
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center)
     {
-        Image(painter = painterResource(id = R.drawable.tapstrap___pgina_1),
-            contentDescription = "Logo App",
+        Image(painter = painterResource(id = R.drawable.upsrj_logo),
+            contentDescription = "LOGO APP",
             modifier = Modifier
                 .clip(CircleShape)
                 .size(300.dp, 300.dp)
